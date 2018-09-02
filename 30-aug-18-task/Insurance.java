@@ -1,7 +1,7 @@
 public class Insurance{
 
-private int pCode;
-private String pName;
+protected int pCode;
+protected String pName;
 
 public Insurance(int pCode,String pName){
    this.pCode=pCode;

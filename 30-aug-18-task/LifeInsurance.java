@@ -16,8 +16,10 @@ public LifeInsurance(int pCode,String pName,int minSumAssured,int maxSumAssured,
 }
 
 public void disp(){
-System.out.println("pcode:"+" "+pCode+" "+"pname:"+" "+pName+" "+"minSumAssured:"+" "+minSumAssured+" "+"maxSumAssured:"+" "+maxSumAssured+" "+"policyTerm:
-"+" "+policyTerm+" "+"nominee"+"  "+nominee);
+System.out.println("pcode:"+" "+pCode+" "+"pname:"+" "+pName+" "+"minSumAssured:"+" "+minSumAssured+" "+"maxSumAssured:"+" "+maxSumAssured+" "+"policyTerm:"+
+
+
+" " +policyTerm+" "+"nominee"+"  "+nominee);
 
 }
 

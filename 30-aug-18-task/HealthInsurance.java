@@ -18,7 +18,7 @@ public class HealthInsurance extends Insurance{
        System.out.println("pcode:"+pCode+" "+"pName:"+pName+" "+"sumAssured:"+sumAssured+" "+"rentperday:"+rentPerDay+" "+"preHosp:"+preHosp+" "+"postHosp:"+postHosp);   
    }
 
-public void renew(){
+    public void renew(){
 
     System.out.println("renewing from health");
 }
