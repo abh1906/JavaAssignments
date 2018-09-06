@@ -8,14 +8,14 @@ public class CopyData{
         FileInputStream fin=new FileInputStream(f);
         FileOutputStream fos=new FileOutputStream(filename2);
         int n;
-        if(f.exists()==false){
-            System.out.println("file doesnot exists");
+        if(f.exists()==false || f.isDirectory()){
+            System.out.println("file doesnot exists or is a directory");
         }
         while((n=fin.read())!=-1)
            fos.write(n);
     
-    fin.close();
-    fos.close();
+        fin.close();
+        fos.close();
 
 }
 }
