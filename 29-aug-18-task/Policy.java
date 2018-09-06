@@ -2,9 +2,9 @@ public class Policy{
 private int pCode;
 private String pName;
 private String pType;
- private int minAmount;
- private  int maxAmount;
- private int  lAge;
+private int minAmount;
+private  int maxAmount;
+private int  lAge;
 private int hAge;
 
 public 	Policy(int pCode,String pName,String pType,int minAmount,int maxAmount,int lAge,int hAge ){
@@ -30,17 +30,17 @@ System.out.println("POLICY_CODE"+" "+tmp.pCode+" "+"POLICY_NAME:"+" "+tmp.pName+
 }
 public void setData(int pCode,String pName,String pType,int minAmount,int maxAmount,int lAge,int hAge ){
 	this.pCode=pCode;
-this.pName=pName;
-this.pType=pType;
-this.minAmount=minAmount;
-this.maxAmount=minAmount;
-this.lAge=lAge;
-this.hAge=hAge;
-}
+    this.pName=pName;
+    this.pType=pType;
+    this.minAmount=minAmount;
+    this.maxAmount=minAmount; 
+    this.lAge=lAge;
+    this.hAge=hAge;
+  }
 
 }
+                                                                                                                
 
-
-
-
+                                                 
+                                             
 
