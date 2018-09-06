@@ -28,7 +28,7 @@ public class StudentSort2 {
              @Override
              public int compare(Student o1, Student o2) {
                  //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-                 return o1.compareTo(o2);
+                 return o1.getName().compareTo(o2.getName());
              }
             
         }
