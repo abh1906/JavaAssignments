@@ -14,6 +14,12 @@ public class Test {
     /**
      * @param args the command line arguments
      */
+    
+    @Override
+    public boolean equals(Object obj) {       return super.equals(obj); //To change body of generated methods, choose Tools | Templates.
+        // TODO code application logic here
+    }
+
     public static void main(String[] args) {
         // TODO code application logic here
     }

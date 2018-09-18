@@ -16,6 +16,10 @@ public class ListToList extends java.awt.Frame {
      */
     public ListToList() {
         initComponents();
+        l1.add("indore");
+        l1.add("bhopal");
+        l1.add("guwahati");
+        l1.add("delhi");
     }
 
     /**
@@ -26,11 +30,31 @@ public class ListToList extends java.awt.Frame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        l1 = new java.awt.List();
+        l2 = new java.awt.List();
+
+        setMinimumSize(new java.awt.Dimension(500, 500));
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosing(java.awt.event.WindowEvent evt) {
                 exitForm(evt);
             }
         });
+        setLayout(null);
+
+        l1.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                l1ItemStateChanged(evt);
+            }
+        });
+        l1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                l1ActionPerformed(evt);
+            }
+        });
+        add(l1);
+        l1.setBounds(60, 30, 100, 190);
+        add(l2);
+        l2.setBounds(270, 30, 110, 190);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -41,6 +65,18 @@ public class ListToList extends java.awt.Frame {
     private void exitForm(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_exitForm
         System.exit(0);
     }//GEN-LAST:event_exitForm
+
+    private void l1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_l1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_l1ActionPerformed
+
+    private void l1ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_l1ItemStateChanged
+        // TODO add your handling code here:
+        String selected=l1.getSelectedItem();
+        l2.add(selected);
+        l1.remove(selected);
+        
+    }//GEN-LAST:event_l1ItemStateChanged
 
     /**
      * @param args the command line arguments
@@ -55,5 +91,7 @@ public class ListToList extends java.awt.Frame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.List l1;
+    private java.awt.List l2;
     // End of variables declaration//GEN-END:variables
 }
